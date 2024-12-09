@@ -1,0 +1,13 @@
+{
+  "name": "ollama01",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "test01.js",
+  "scripts": {
+    "start": "node test01.js"
+  },
+  "dependencies": {
+    "ollama": "^1.0.0"
+  }
+}
+
