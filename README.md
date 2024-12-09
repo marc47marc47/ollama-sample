@@ -1,4 +1,5 @@
-# ollama sample with node.js backup and front and
+# ollama sample 
+with node.js backup and front and
 
 ## pre install
   1. install ollama:
