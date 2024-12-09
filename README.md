@@ -28,3 +28,5 @@ sh npm-install.sh
 ```bash
 sh start-http.sh
 ```
+
+![run result](./runsample.png)
