@@ -17,15 +17,15 @@ app.post('/api/chat', async (req, res) => {
   }
 
   try {
-    // 使用 llama3.2 進行聊天
+    // 使用 gemma2:9b 進行聊天
     const response = await ollama.chat({
-      model: 'llama3.2',
+      model: 'gemma2:9b',
       messages: [{ role: 'user', content: question }],
     });
     const htmlContent = marked(response.message.content);
     return res.json({ answer: htmlContent });
   } catch (error) {
-    console.error('Error communicating with llama3.2:', error);
+    console.error('Error communicating with gemma2:9b:', error);
     return res.status(500).json({ error: 'Internal Server Error' });
   }
 });
